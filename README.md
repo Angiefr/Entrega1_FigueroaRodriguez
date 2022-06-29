@@ -4,6 +4,7 @@ La idea principal es presentar una aplicación en la que cada usuario pueda tene
 - Medicamento (nombre, cantidad, farmacia)
 - Tratamiento (dolencia, inicio, fin)
 - Doctor (nombre, matrícula)
+
 Como podrán observar, los datos mencionados son los modelos y sus atributos.
 
 Habrá un inicio introductorio para el usuario, que contendrá una descripción del objetivo y un simple paso a paso.
