@@ -1,0 +1,43 @@
+{% extends "./base.html" %}
+
+{% block title %} Gestión de Medicamentos{% endblock %}
+
+{% block body %} 
+<div class = "row">
+    <div class = "col-md-12 col-md-6 col-lg-4 col-lx-4">
+        <h2> Gestión de Medicamentos </h2>
+        <div>
+            <div class = "card-body">
+                <form action = "/inicio/" method = "POST"> {% csrf_token %}
+                    <div class = "form-group">
+                        <input type = "text" id = "txtNombre" name = "txtNombre" class = "form-control" placeholder = "Ingrese nombre aquí">     
+                    </div>
+                    <div class = "form-group">
+                        <buttom type = "submit" class = "btn btn-sucess btn-block"> Guardar </buttom>  
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class = "col-md-12 col-md-6 col-lg-8 col-lx-8">
+        <div class = "table-responsive">
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Medicamentos</th>
+                        <th>erhhrt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for m in medicamentos %}
+                        <tr>
+                            <td>{{m.nombre}}</td>
+                            <td>foef`wf`</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
